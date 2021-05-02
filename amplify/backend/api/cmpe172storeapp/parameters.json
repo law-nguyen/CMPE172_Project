@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "cmpe172storeapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcmpe172storeappaa0c4023",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

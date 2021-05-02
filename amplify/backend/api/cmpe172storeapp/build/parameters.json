@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "cmpe172storeapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcmpe172storeappaa0c4023",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-cmpe172storeapp-prod-122509-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/dae27abd2f177b308f74ac0295b14697b596c6f5"
+}

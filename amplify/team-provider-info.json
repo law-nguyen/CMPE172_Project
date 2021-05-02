@@ -1,0 +1,20 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cmpe172storeapp-prod-122509-authRole",
+            "UnauthRoleArn": "arn:aws:iam::938090425558:role/amplify-cmpe172storeapp-prod-122509-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::938090425558:role/amplify-cmpe172storeapp-prod-122509-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-cmpe172storeapp-prod-122509-deployment",
+            "UnauthRoleName": "amplify-cmpe172storeapp-prod-122509-unauthRole",
+            "StackName": "amplify-cmpe172storeapp-prod-122509",
+            "StackId": "arn:aws:cloudformation:us-east-1:938090425558:stack/amplify-cmpe172storeapp-prod-122509/fc1fd660-8e68-11eb-a2ea-0ef585e93a5f",
+            "AmplifyAppId": "d3qho9w2gjy3rh"
+        },
+        "categories": {
+            "auth": {
+                "cmpe172storeappaa0c4023": {}
+            }
+        }
+    }
+}
