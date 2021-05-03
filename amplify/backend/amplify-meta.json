@@ -1,0 +1,132 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-cmpe172storeapp-prod-122509-authRole",
+			"UnauthRoleArn": "arn:aws:iam::938090425558:role/amplify-cmpe172storeapp-prod-122509-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::938090425558:role/amplify-cmpe172storeapp-prod-122509-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-cmpe172storeapp-prod-122509-deployment",
+			"UnauthRoleName": "amplify-cmpe172storeapp-prod-122509-unauthRole",
+			"StackName": "amplify-cmpe172storeapp-prod-122509",
+			"StackId": "arn:aws:cloudformation:us-east-1:938090425558:stack/amplify-cmpe172storeapp-prod-122509/fc1fd660-8e68-11eb-a2ea-0ef585e93a5f",
+			"AmplifyAppId": "d3qho9w2gjy3rh"
+		}
+	},
+	"auth": {
+		"cmpe172storeappaa0c4023": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-cmpe172storeapp-prod-122509-deployment/amplify-cfn-templates/auth/cmpe172storeappaa0c4023-cloudformation-template.yml",
+				"logicalId": "authcmpe172storeappaa0c4023"
+			},
+			"lastPushTimeStamp": "2021-03-27T01:45:23.263Z",
+			"output": {
+				"AppClientSecret": "1g421a2inhafrur9mo43ff2o0cfpvvq4df9a2nu0an2m3vdv015q",
+				"UserPoolId": "us-east-1_x9Vno1oqE",
+				"AppClientIDWeb": "596f3d4mahiugg8kp7iq15q099",
+				"AppClientID": "49d4bjhg176tnlvk5htsbi85a1",
+				"IdentityPoolId": "us-east-1:4f03cd51-4780-4796-b9b7-11c900c059d8",
+				"IdentityPoolName": "cmpe172storeappaa0c4023_identitypool_aa0c4023__prod",
+				"UserPoolName": "cmpe172storeappaa0c4023_userpool_aa0c4023"
+			},
+			"lastPushDirHash": "AGjkx0PRpPmQXSCmQZxwSKhAdoA="
+		}
+	},
+	"storage": {
+		"images": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-cmpe172storeapp-prod-122509-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storageimages"
+			},
+			"lastPushTimeStamp": "2021-03-27T01:45:23.265Z",
+			"output": {
+				"BucketName": "cmpe172storeappec7f744e59154260b845662bdeed7d31122509-prod",
+				"Region": "us-east-1"
+			},
+			"lastPushDirHash": "7YUm0PuJVfdEC6FQzDNeg9ROHzU="
+		}
+	},
+	"function": {
+		"processPayment": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": [],
+			"lastBuildTimeStamp": "2021-03-27T01:42:11.022Z",
+			"lastPackageTimeStamp": "2021-03-27T01:42:11.583Z",
+			"distZipFilename": "processPayment-2f47513750346e2b5875-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-cmpe172storeapp-prod-122509-deployment/amplify-cfn-templates/function/processPayment-cloudformation-template.json",
+				"logicalId": "functionprocessPayment"
+			},
+			"lastPushTimeStamp": "2021-03-27T01:45:23.266Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:938090425558:function:processPayment-prod",
+				"Name": "processPayment-prod",
+				"LambdaExecutionRole": "cmpe172storeappLambdaRole29a40596-prod"
+			},
+			"lastPushDirHash": "foETRcm8tpPJmpSQmL/A317iKmA="
+		},
+		"createOrder": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": [],
+			"lastBuildTimeStamp": "2021-03-27T01:44:18.168Z",
+			"lastPackageTimeStamp": "2021-03-27T01:44:18.321Z",
+			"distZipFilename": "createOrder-79736559506a324b7533-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-cmpe172storeapp-prod-122509-deployment/amplify-cfn-templates/function/createOrder-cloudformation-template.json",
+				"logicalId": "functioncreateOrder"
+			},
+			"lastPushTimeStamp": "2021-03-27T01:45:23.275Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:938090425558:function:createOrder-prod",
+				"Name": "createOrder-prod",
+				"LambdaExecutionRole": "cmpe172storeappLambdaRolefaf454d0-prod"
+			},
+			"lastPushDirHash": "MiS6lObv187hE/EyndBTxKOL6XI="
+		}
+	},
+	"api": {
+		"cmpe172storeapp": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [
+						{
+							"authenticationType": "API_KEY",
+							"apiKeyConfig": {
+								"description": "Guest user access to store",
+								"apiKeyExpirationDays": 365
+							}
+						}
+					],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authcmpe172storeappaa0c4023"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "eoycf6gkr5esljx33ijyqnotum",
+				"GraphQLAPIEndpointOutput": "https://lm2cbfpdezbydhzqf3lvu3hp4i.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-uvavx5iiq5d5xn6erxnxgeodoa"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-cmpe172storeapp-prod-122509-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apicmpe172storeapp"
+			},
+			"lastPushTimeStamp": "2021-03-27T01:45:23.270Z",
+			"lastPushDirHash": "bGpwjYZid8c4Geq1SO864Ws7Wlc="
+		}
+	}
+}
