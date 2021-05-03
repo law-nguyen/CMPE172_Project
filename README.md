@@ -1,3 +1,12 @@
+# CMPE 172 Project: SJSU Bookstore v2.0
+A better, cleaner version of the old news.
+
+## AWS services used
+S3, Amplify, AppSync, Cognito, Lambda, DynamoDB
+
+## Acknowledgement
+This project was built by following a tutorial posted by freeCodeCamp.org
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
