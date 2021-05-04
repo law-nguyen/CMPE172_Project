@@ -15,6 +15,7 @@ const BookProvider = ({ children }) => {
     fetchBooks();
   }, []);
 
+  //use AWS to process order
   const checkout = async (orderDetails) => {
     const payload = {
       id: uuidv4(),
@@ -28,6 +29,7 @@ const BookProvider = ({ children }) => {
     }
   };
 
+  //get a list of the books from the databse
   const fetchBooks = async () => {
     try {
       setLoading(true);
