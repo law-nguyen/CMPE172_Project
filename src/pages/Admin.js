@@ -22,7 +22,7 @@ const Admin = () => {
             await API.graphql(graphqlOperation(createBook, { input: bookDetails }))
             setBookDetails({ title: "", description: "", image: "", author: "", price: "" })
         } catch (err) {
-            console.log('Error creating todo:', err)
+            console.log('error creating todo:', err)
         }
     }
 
