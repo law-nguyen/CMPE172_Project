@@ -13,6 +13,7 @@ const CartProvider = ({ children }) => {
     setTotal(parseFloat(total.toFixed(2)));
   }, [cart]);
 
+  //increment the number of a certain item in the cart by one
   const increaseAmount = (id) => {
     const updatedCart = [...cart].map((item) => {
       return item.id === id ? { ...item, amount: item.amount + 1 } : item;
@@ -20,6 +21,7 @@ const CartProvider = ({ children }) => {
     setCart(updatedCart);
   };
 
+  //decrement the number of a certain item in the cart by one
   const decreaseAmount = (id, amount) => {
     let updatedCart = [];
     if (amount === 1) {
@@ -32,6 +34,7 @@ const CartProvider = ({ children }) => {
     setCart(updatedCart);
   };
 
+  //add a book to the cart
   const addToCart = (book) => {
     const { id, title, price, image } = book;
     const cartItem = [...cart].find((item) => item.id === id);
@@ -43,6 +46,7 @@ const CartProvider = ({ children }) => {
     }
   };
 
+  //clear cart
   const clearCart = () => {
     setCart([]);
   };
