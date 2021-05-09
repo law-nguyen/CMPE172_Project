@@ -1,5 +1,11 @@
-# CMPE 172 Project: SJSU Bookstore v2.0
-A better, cleaner version of the old news.
+# SJSU Spring 2021 CMPE 172 Project
+
+
+Presented by: Kevin Nguyen, Lawrence Nguyen, Alex Vuong
+
+# SJSU Bookstore v2.0
+A better, cleaner version of the old news. This project is an online bookstore that streamlines SJSU's otherwise cumbersome book ordering process.
+Built using React, AWS services, and Stripe.
 
 ## AWS services used
 S3, Amplify, AppSync, Cognito, Lambda, DynamoDB
@@ -7,9 +13,16 @@ S3, Amplify, AppSync, Cognito, Lambda, DynamoDB
 ## Acknowledgement
 This project was built by following a tutorial posted by freeCodeCamp.org
 
-# Getting Started with Create React App
+## Project Screenshots 
+#### Home Screen
+![image](https://user-images.githubusercontent.com/43452418/117559756-e3204000-b03c-11eb-816f-e788af042a2d.png)
+#### adding a book to cart
+![image](https://user-images.githubusercontent.com/43452418/117559761-efa49880-b03c-11eb-821b-ef45902c75b8.png)
+![image](https://user-images.githubusercontent.com/43452418/117559774-021ed200-b03d-11eb-99e9-5b66ba3ddd1f.png)
+#### checkout -- account auth
+![image](https://user-images.githubusercontent.com/43452418/117559782-0f3bc100-b03d-11eb-9f85-f0bea3a7adf3.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# How to run the project: 
 
 ## Available Scripts
 
